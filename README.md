@@ -51,7 +51,7 @@ Feel free to explore and modify the code based on your requirements!
 
 ## How to Run
 
-1. Clone the repository.
+1. Clone the repository using `git clone https://github.com/vatsalsinghkv/restaurant-management.git`.
 2. Ensure the required data files exist (`data/menu.json`, `data/transactions.json`, `data/admins.json`).
 3. Update the menu in `data/menu.json` check `examples/*json` for reference.
 4. Run the script using Python: `python main.py` or `python3 main.py`.
