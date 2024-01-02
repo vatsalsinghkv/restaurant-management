@@ -72,6 +72,8 @@ class RestaurantManager:
                     confirmation = input("Confirm your order? (Y/N): ").lower()
                     if confirmation == 'y':
                         timestamp = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
+                        for order in order_list:
+                            order['timestamp'] = timestamp
                         self.transactions.extend(order_list)
                         self.save_data(self.transactions, self.transactions_file)
                         print("Order confirmed. Thank you!")
